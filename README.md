@@ -50,17 +50,15 @@ Run it from the project root so the `assets/` folder is found.
 DunkinPOS/
 ├── src/DunkinPOS.java     # Application source
 ├── assets/
-│   ├── menu.csv           # Category,Name,Price,ImageFile
 │   ├── config.properties  # Store info, VAT, cashiers, currency
-│   ├── README.txt         # How to add menu items
-│   └── ass-ets/           # Product images by category
+│   └── ass-ets/           # Product images by category + menu.csv
 └── run.bat                # Compile and launch (Windows)
 ```
 
 ## Customizing the menu
 
 1. Put a PNG/JPG in the matching category folder.
-2. Add a line to `assets/menu.csv`: `Category,Name,Price,ImageFile`.
+2. Add a line to `assets/ass-ets/menu.csv`: `Folder=Tab label,Name,Price,ImageFile`.
    Images not listed in the CSV are still shown, priced at `default.price`.
 3. Edit store details and VAT in `assets/config.properties`.
 4. Restart the app.
